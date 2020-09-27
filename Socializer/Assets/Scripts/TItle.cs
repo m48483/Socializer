@@ -20,13 +20,13 @@ public class TItle : MonoBehaviour
         }*/
     }
 
-    public void StartGame()
+    /*public void StartGame()
     {
-        SceneManager.LoadScene("Gamestart");
+        SceneManager.LoadScene("NewCharacter");
     }
-
+    
     public void ExitGame()
     {
         Application.Quit();
-    }
+    }*/
 }
