@@ -8,12 +8,6 @@ public class InputName : MonoBehaviour
     public InputField inputfield;
     public string SendName;
     
-
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
     public void send()
     {
         SendName = inputfield.text;
