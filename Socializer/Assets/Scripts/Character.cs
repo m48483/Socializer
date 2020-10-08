@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Character : MonoBehaviour
 {
+    
     public string Gender;
     public string Name;
     InputName ChName;
@@ -16,10 +17,10 @@ public class Character : MonoBehaviour
         genderchoose= GameObject.Find("Canvas").GetComponent<GenderChoose>();
     }
     // Update is called once per frame
-    void Update() 
+    void Update()
     {
-        CharacterName();
         CharacterGender();
+        CharacterName();
     }
     
     public void CharacterName()

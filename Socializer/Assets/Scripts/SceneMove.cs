@@ -5,18 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class SceneMove : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void TitleScene()
     {
         SceneManager.LoadScene("Title");
@@ -25,7 +13,16 @@ public class SceneMove : MonoBehaviour
     {
         SceneManager.LoadScene("NewCharacter");
     }
-   
+
+    public void AMscene()
+    {
+        SceneManager.LoadScene("AM");
+    }
+
+    public void HomeScene()
+    {
+        SceneManager.LoadScene("Home");
+    }
     public void ExitGame()
     {
         Application.Quit();
