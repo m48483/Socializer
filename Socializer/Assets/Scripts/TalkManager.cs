@@ -33,7 +33,6 @@ public class TalkManager : MonoBehaviour
     public void Talk()
     {
         TalkText.text = Talkread[0];
-
     }
     public void envisiable()
     {

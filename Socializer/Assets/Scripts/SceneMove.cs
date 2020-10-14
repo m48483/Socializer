@@ -23,6 +23,14 @@ public class SceneMove : MonoBehaviour
     {
         SceneManager.LoadScene("Home");
     }
+    public void OfficeScene()
+    {
+        SceneManager.LoadScene("Office");
+    }
+    public void LobbyScene()
+    {
+        SceneManager.LoadScene("Lobby");
+    }
     public void ExitGame()
     {
         Application.Quit();
