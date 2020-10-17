@@ -55,12 +55,6 @@ public class homeTalk : MonoBehaviour
     public void restChoice()
     {
         TalkText.text = Talkread[3];
-        StartCoroutine(StartNextCoroutine());
         TalkButton3.gameObject.SetActive(false);
-    }
-
-    IEnumerator StartNextCoroutine()
-    {
-        yield return new WaitForSeconds(1.3f);
     }
 }
