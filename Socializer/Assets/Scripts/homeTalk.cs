@@ -8,6 +8,7 @@ public class homeTalk : MonoBehaviour
     public Button TalkButton1, TalkButton2, TalkButton3, MoveButton;
     public GameObject TalkUI;
     public Text TalkText;
+    
 
     enum State { good, bad, rest };
 
@@ -16,6 +17,7 @@ public class homeTalk : MonoBehaviour
 
     void Start()
     {
+       
         Button click1 = TalkButton1.GetComponent<Button>();
         Button click2 = TalkButton2.GetComponent<Button>();
         Button click3 = TalkButton3.GetComponent<Button>();
@@ -32,7 +34,7 @@ public class homeTalk : MonoBehaviour
 
     void Update()
     {
-
+        
     }
     public void Talk()
     {

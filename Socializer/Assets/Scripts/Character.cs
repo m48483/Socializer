@@ -13,10 +13,11 @@ public class Character : MonoBehaviour
    
     void Start()
     {
+        DontDestroyOnLoad(transform.gameObject);
         ChName = GameObject.Find("InputName").GetComponent<InputName>();
         genderchoose= GameObject.Find("Canvas").GetComponent<GenderChoose>();
     }
-    // Update is called once per frame
+    
     void Update()
     {
         CharacterGender();
