@@ -724,7 +724,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 578386051}
-        m_MethodName: 
+        m_MethodName: AMscene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1456,7 +1456,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1210466449}
-  - component: {fileID: 1210466448}
   - component: {fileID: 1210466450}
   m_Layer: 0
   m_Name: LobbyManager
@@ -1465,26 +1464,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1210466448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1210466447}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f2c9ecbdba30f347b9f201efd571c34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TalkButton1: {fileID: 1048402050}
-  TalkButton2: {fileID: 248420310}
-  TalkUI: {fileID: 248420307}
-  TalkText: {fileID: 69536387}
-  Talkread:
-  - "\uB2F9\uC2E0\uB9CC\uD07C \uD6CC\uB96D\uD55C \uC778\uC7AC\uB294 \uBCF4\uC9C0
-    \uBABB\uD588\uB124."
-  - "\uC785 \uC870\uC2EC\uD558\uAC8C."
 --- !u!4 &1210466449
 Transform:
   m_ObjectHideFlags: 0
@@ -1520,13 +1499,14 @@ MonoBehaviour:
   moveHomeButton: {fileID: 0}
   TalkUI: {fileID: 248420307}
   TalkText: {fileID: 69536387}
+  check: 0
   Talkread:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - "\uBB34\uC5C7\uC744 \uD558\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?"
+  - "\uC5B4\uB514\uB85C \uC774\uB3D9\uD558\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?"
+  - "\uD560 \uB9D0\uC774\uB77C\uB3C4 \uC788\uB294\uAC00?"
+  - "\uB2F9\uC2E0\uB9CC\uD07C \uD6CC\uB96D\uD55C \uC778\uC7AC\uB97C \uBCF4\uC9C0
+    \uBABB\uD588\uB124."
+  - "\uC785\uC870\uC2EC\uD558\uAC8C"
 --- !u!1 &1308117310
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,8 +8,9 @@ public class lobbyManager : MonoBehaviour
     public Button moveButton, talkButton, goodTalk, badTalk, goHome, goAM, moveHomeButton;
     public GameObject TalkUI;
     public Text TalkText;
+    public bool check;
 
-    public string[] Talkread;
+    public string[] Talkread = { "무엇을 하시겠습니까?", "어디로 이동하시겠습니까?", "할 말이라도 있는가?", "당신만큼 훌륭한 인재를 보지 못했네.", "입조심하게" };
 
     void Start()
     {
@@ -54,6 +55,8 @@ public class lobbyManager : MonoBehaviour
         TalkText.text = Talkread[1];
         talkButton.gameObject.SetActive(false);
         moveButton.gameObject.SetActive(false);
+        goodTalk.gameObject.SetActive(false);
+        badTalk.gameObject.SetActive(false);
     }
     public void talkChoice()
     {
@@ -70,15 +73,17 @@ public class lobbyManager : MonoBehaviour
     public void badChoice()
     {
         TalkText.text = Talkread[4];
+        goodTalk.gameObject.SetActive(false);
+        badTalk.gameObject.SetActive(false);
     }
     public void goHomeChoice()
     {
-        TalkText.text = Talkread[5];
         goHome.gameObject.SetActive(false);
         goAM.gameObject.SetActive(false);
     }
     public void goAMChoice()
     {
-
+        goHome.gameObject.SetActive(false);
+        goAM.gameObject.SetActive(false);
     }
 }
